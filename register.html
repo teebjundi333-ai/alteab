@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>التسجيل</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>نموذج التسجيل</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="courses.html">الدورات</a></li>
+                <li><a href="register.html">التسجيل</a></li>
+                <li><a href="gallery.html">معرض الصور</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <form onsubmit="return validateForm()">
+            <label>الاسم الكامل:</label><br>
+            <input type="text" id="name"><br><br>
+
+            <label>البريد الإلكتروني:</label><br>
+            <input type="email" id="email" placeholder="example@gmail.com"><br><br>
+            <label>رقم الهاتف:</label><br>
+            <input type="tel" id="phone" placeholder="07XXXXXXXX"><br><br>
+
+
+            <label>اختر الدورة:</label><br>
+            <select id="course">
+                <option value="">-- اختر --</option>
+                <option value="html_css">أساسيات HTML و CSS</option>
+                <option value="oop">لغة برمجة كائنية (OOP)</option>
+                <option value="ui_dev">تطوير واجهات المستخدم</option>
+                <option value="cpp_intro">مقدمة في البرمجة (C++)</option>
+
+            </select><br><br>
+
+
+
+            <input type="submit" value="تسجيل">
+            <input type="reset" value="مسح البيانات">
+
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 مركز تطوير المهارات التقنية</p>
+    </footer>
+</body>
+</html>
